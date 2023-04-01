@@ -5,18 +5,18 @@
 
             <div class="modal-content-container">
 
-                <h1>Congratulations, Quiz Completed.</h1>
+                <h1>Поздравляем! Вы прошли тест</h1>
 
                 <div class="grade-details">
-                    <p>Attempts : 10</p>
-                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
-                    <p>Right Answers : <span id="right-answers"></span></p>
-                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p>Вопросов : 10</p>
+                    <p>Неправильных ответов : <span id="wrong-answers"></span></p>
+                    <p>Правильных ответов : <span id="right-answers"></span></p>
+                    <p>Рейтинг : <span id="grade-percentage"></span>%</p>
                     <p ><span id="remarks"></span></p>
                 </div>
 
                 <div class="modal-button-container">
-                    <button onclick="closeScoreModal()">Continue</button>
+                    <button onclick="closeScoreModal()">Продолжить</button>
                 </div>
 
             </div>
@@ -26,8 +26,8 @@
         <div class="game-quiz-container">
 
             <div class="game-details-container">
-                <h1>Score : <span id="player-score"></span> / 10</h1>
-                <h1> Question : <span id="question-number"></span> / 10</h1>
+                <h1>Рейтинг : <span id="player-score"></span> / 10</h1>
+                <h1>Вопросов : <span id="question-number"></span> / 10</h1>
             </div>
 
             <div class="game-question-container">
@@ -39,10 +39,10 @@
                <div class="modal-container" id="option-modal">
 
                     <div class="modal-content-container">
-                         <h1>Please Pick An Option</h1>
+                         <h1>Выберите один вариант ответа</h1>
 
                          <div class="modal-button-container">
-                            <button onclick="closeOptionModal()">Continue</button>
+                            <button onclick="closeOptionModal()">Продолжить</button>
                         </div>
 
                     </div>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="next-button-container">
-                <button onclick="handleNextQuestion()">Next Question</button>
+                <button onclick="handleNextQuestion()">Далее</button>
             </div>
 
         </div>
