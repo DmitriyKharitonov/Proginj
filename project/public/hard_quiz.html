@@ -1,0 +1,67 @@
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Поздравляем! Вы прошли тест</h1>
+
+                <div class="grade-details">
+                    <p>Вопросов : 10</p>
+                    <p>Неправильных ответов : <span id="wrong-answers"></span></p>
+                    <p>Правильных ответов : <span id="right-answers"></span></p>
+                    <p>Рейтинг : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Продолжить</button>
+                </div>
+
+            </div>
+        </div>
+<!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Рейтинг : <span id="player-score"></span> / 10</h1>
+                <h1>Вопросов : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+
+               <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                         <h1>Введите вариант ответа</h1>
+
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Продолжить</button>
+                        </div>
+
+                    </div>
+
+               </div>
+
+                <span>
+                    <input type="text" id="answer" name="user_answer"/>
+                </span>
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Далее</button>
+            </div>
+
+        </div>
+    </main>
+            
+    <script src = "js/hard_quiz.js" charset=UTF-8></script>
+    <link rel="stylesheet" href="styles/hard_quiz.css">
+</body>
